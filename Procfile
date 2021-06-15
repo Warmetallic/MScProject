@@ -1,0 +1,1 @@
+web: gunicorn folksite.wsgi --log-file -
