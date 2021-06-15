@@ -3,36 +3,21 @@
 
 {% block content %}
 <!--Introduction section-->
-<div class="container pt-3 my-3">
-	<div class="row">
-		<div class="col"><h1 class="text-center">Welcome!</h1></div>
+<div class="container">
+	<!-- <div class="col"><h1 class="text-center">Welcome!</h1></div> -->
+
+	<div class="grid-container">
+		{% for song in songs %}
+
+		<div class="card card-home">
+			<div class="card-header"><b>{{song.id}}</b> {{song.name}}</div>
+			<div class="card-body">{{song.description}}</div>
+			<a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">Check</a>
+			<div class="card-footer">{{song.created_date}}</div>
+			<img class="card-img-bottom" src="/static/imgGleb/test.jpg" alt="hmm" style="width:100%">
+		</div>
+
+		{% endfor %}
 	</div>
-	<div class="row">
-		<div class="col overridep">
-			<p class="text-center">
-				<ol>
-					<div class="list-group">
-						{% for song in songs %}
-						<li><p><b> Name: <a href="{% url 'song' id=song.id %}">{{song.name}}</a></b>
-							<b>Description:</b> {{song.description}}
-							{% endfor %}
-						</p>
-					</li>
-				</div>
-			</ol>
-
-
-			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non egestas magna. Mauris nisl sapien, ullamcorper quis cursus sit amet, tincidunt eu mi. Donec gravida porttitor eleifend. Aliquam et neque et ligula porta ultricies. Praesent mattis leo a arcu malesuada bibendum. Phasellus a risus quis ante ultrices mollis. Proin rutrum venenatis augue sit amet lobortis. Cras tristique nisl justo, nec pellentesque neque varius ut. Nullam dapibus leo maximus, semper nisi nec, interdum erat. Fusce nisi felis, interdum at neque eu, lacinia sollicitudin erat. Aliquam blandit tincidunt sollicitudin. Phasellus sem turpis, interdum a lorem gravida, pulvinar sagittis eros.</div><br>
-
-			<div>Aliquam lobortis iaculis tellus vitae dapibus. Vivamus accumsan, mauris posuere feugiat ornare, nibh justo accumsan velit, eget molestie tortor nunc nec nulla. Aenean sit amet suscipit est. Phasellus efficitur rutrum vestibulum. Curabitur faucibus mi non tellus lacinia euismod. Nam nec urna dapibus, tempor erat vel, ornare lectus. Maecenas dictum posuere nisl, ut porta massa. Donec a nisi a est vulputate ultrices. Fusce placerat placerat nibh vitae semper. Morbi ullamcorper risus libero, ut condimentum odio condimentum nec.</div><br>
-
-			<div>Pellentesque mauris nulla, eleifend a eleifend sed, ultricies sit amet dolor. Morbi non ultrices nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac mattis libero. Duis odio eros, malesuada eget augue ut, mollis mattis nulla. Nullam ultricies, massa eu ornare posuere, velit orci ultrices justo, id vehicula nulla massa a sapien. Quisque porttitor, velit in tempor tincidunt, est justo congue enim, sit amet pulvinar purus ligula non velit. Curabitur in porttitor eros. Fusce finibus viverra est at suscipit. Mauris eu libero et mauris feugiat porttitor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec lacinia leo in lacus rhoncus vestibulum. Phasellus posuere dapibus ex, at ultrices sem cursus in.</div><br>
-
-			<div>Maecenas quam mi, lacinia molestie suscipit nec, molestie bibendum metus. Praesent viverra dapibus massa at imperdiet. Nam pretium suscipit viverra. Aliquam a porttitor nunc. Proin maximus tortor sodales ipsum luctus, vel tempus ante volutpat. Sed consectetur nulla quis odio suscipit lobortis. Vivamus fermentum neque et purus ornare luctus. Suspendisse tincidunt, enim eu vulputate congue, purus nunc gravida ex, id pellentesque leo est hendrerit justo. Nullam quis eros ac neque venenatis rhoncus.</div><br>
-
-			<div>Aliquam erat volutpat. Pellentesque bibendum justo id justo tincidunt pretium. Donec placerat maximus mi. Nunc non facilisis magna. Ut id hendrerit est, at vestibulum tortor. Praesent placerat dui in augue auctor, venenatis accumsan ipsum vestibulum. Ut aliquet sit amet enim at imperdiet. Etiam arcu nisl, rutrum sed iaculis nec, tincidunt in diam. Nam non tempor nibh.</div>
-		</p>
-	</div>
-</div>
 </div>
 {% endblock %}
