@@ -102,7 +102,7 @@ color: white;
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 5px solid black;
+  border: 1px solid black;
   text-align: center;
   font-size: 25px;
 }
@@ -116,7 +116,12 @@ color: white;
   margin-bottom: 10px;
 }
 
-#reg-container {
-  background-color: pink;
 
+#bTest {
+  border: solid black 1px;
 }
+
+#login-style {
+  margin-left: 450px;
+}
+

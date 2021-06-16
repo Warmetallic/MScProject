@@ -5,15 +5,15 @@
 {% load static %}
 
 <!-- Code adapted from the following https://getbootstrap.com/docs/4.0/components/card/#sizing -->
-
-<div class="card-header">
-  <div class="card">
-  <div class="card-header">
+<div class="container">
+  <div class="card-header" id="bTest">
+    <div class="card">
+      <div class="card-header">
      Song Title - {{song.name}} 
   </div>
-  <div class="card-body">
-    <h5 class="card-title">Information about this song </h5>
-    <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      <div class="card-body">
+        <h5 class="card-title">Information about this song </h5>
+        <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
     quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -29,50 +29,42 @@
 
 
 </p>
-    
-  </div>
-</div>
-
-<br/>
-  <div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Music Notation notes</h5>
-        <p class="card-text">Below you will find music notation on - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      </div>
+    </div>
+    <br/>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Music Notation notes</h5>
+            <p class="card-text">Below you will find music notation on - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
         consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
         cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Song details and further links</h5>
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">ID: {{song.id}}</p>
+            <p class="card-text">Description: {{song.description}}</p>
+            <p class="card-text">Date: {{song.created_date}}</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-
-
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Song details and further links</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <p class="card-text">ID: {{song.id}}</p>
-		<p class="card-text">Description: {{song.description}}</p>
-		<p class="card-text">Date: {{song.created_date}}</p>
+    <br/>
+    <br/>
+    <div class="card" style="padding: 20px;">
+      <img style="border: solid black 1px;" src="{% static 'images/music-test.png' %}" class="rounded mx-auto d-block" alt="...">
       </div>
+      <br/>
     </div>
   </div>
-</div>
-
-
-
-<br/> <br/>
-
-
-<div class="card" style="padding: 20px;">
-<img src="{% static 'images/music-test.png' %}" class="rounded mx-auto d-block" alt="...">
-</div>
-
-<br/>
-</div>
 
 {% endblock %}
