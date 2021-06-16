@@ -3,95 +3,57 @@
 
 
 <!-- Code adapted from the following https://getbootstrap.com/docs/4.0/components/card/#sizing -->
-<div class="row">
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Login</h5>
-        <p class="card-text"> <p>Please login, or <a href = "{% url 'signup' %}">Register </a>to see this page.</p> </p>
-        <div class="row">
-    <div class="col overridep">
+
+<div class="container">
+  <div class="row" style="margin-left: 450px;">
+    <div class="col-sm-6">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Login</h5>
+          <p class="card-text">
+            <p>Please login, or 
+              <a href = "{% url 'signup' %}">Register </a>to see this page.
+            </p>
+          </p>
+          <div class="row">
+            <div class="col overridep">
       {% if form.errors %}
-      <p>Your username and password didn't match. Please try again.</p>
+      
+              <p>Your username and password didn't match. Please try again.</p>
       {% endif %}
       {% if next %}
       {% if user.is_authenticated %}
-      <p>Your account doesn't have access to this page. To proceed,
+      
+              <p>Your account doesn't have access to this page. To proceed,
       please login with an account that has access.</p>
       {% else %}
       {% endif %}
       {% endif %}
 
-      <!--<p> <a href = "{% url 'signup' %}">Register</a> for an account</p>-->
-      <form method="POST" action="{% url 'login' %}"> 
+      
+              <!--<p><a href = "{% url 'signup' %}">Register</a> for an account</p>-->
+              <form method="POST" action="{% url 'login' %}"> 
         {% csrf_token %}
-        <p>
+        
+                <p>
           {{ form.username.label_tag }}
           {{ form.username }}
         </p>
-        <p>
+                <p>
           {{form.password.label_tag }}
           {{form.password }}
         </p>
-        <input type="submit" name="Login"/>
-        <input type="hidden" name='next' value="{{ next }}"/>
-      </p>
-    </form>
-  </div>
-</div>
-        <!--<a href="#" class="btn btn-primary">Login</a>-->
+                <input type="submit" name="Login"/>
+                <input type="hidden" name='next' value="{{ next }}"/>
+              </p>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-
-  <div class="col-sm-6">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title">Register</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Register</a>
-      </div>
-    </div>
-  </div>
 </div>
+  
 
-<!--
-<div class="container pt-3 my-3">
-  <div class="row">
-    <div class="col"><h1 class="text-center">Login</h1></div>
-  </div>
-  <div class="row">
-    <div class="col overridep">
-      {% if form.errors %}
-      <p>Your username and password didn't match. Please try again.</p>
-      {% endif %}
-      {% if next %}
-      {% if user.is_authenticated %}
-      <p>Your account doesn't have access to this page. To proceed,
-      please login with an account that has access.</p>
-      {% else %}
-      <p>Please login, or <a href = "{% url 'signup' %}">Register </a>to see this page.</p>
-      {% endif %}
-      {% endif %}
-
-      <p> <a href = "{% url 'signup' %}">Register</a> for an account</p>
-      <form method="POST" action="{% url 'login' %}"> 
-        {% csrf_token %}
-        <p>
-          {{ form.username.label_tag }}
-          {{ form.username }}
-        </p>
-        <p>
-          {{form.password.label_tag }}
-          {{form.password }}
-        </p>
-        <input type="submit" name="Login"/>
-        <input type="hidden" name='next' value="{{ next }}"/>
-      </p>
-    </form>
-  </div>
-</div>
-</div>
-</div>-->
 {% endblock %}
