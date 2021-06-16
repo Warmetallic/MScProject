@@ -35,3 +35,12 @@ def signup(request):
         login(request, user)
         return redirect('/')
     return render(request, 'signup.html', {'form': form})
+
+
+def search(request):
+    if request.method == "POST":
+        searched = request.POST['searched']
+        songs = Song.objects.filter(name__contains=searched)
+        return render(request, 'search.html', {'searched': searched, 'songs': songs})
+    else:
+        return render(request, 'search.html', {})

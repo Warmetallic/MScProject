@@ -12,9 +12,9 @@
 		<div class="card card-home">
 			<div class="card-header"><b>{{song.id}}</b> {{song.name}}</div>
 			<div class="card-body">{{song.description}}</div>
-			<a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">Check</a>
+			<a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">View</a>
 			<div class="card-footer">{{song.created_date}}</div>
-			<img class="card-img-bottom" src="/static/imgGleb/test.jpg" alt="hmm" style="width:100%">
+			<img class="card-img-bottom" src="/static/imgGleb/music.png" alt="hmm" style="width:100%">
 		</div>
 
 		{% endfor %}
