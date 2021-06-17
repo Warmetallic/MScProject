@@ -2,7 +2,7 @@ from django.test import Client, TestCase
 from django.urls import reverse
 
 # Create your tests here.
-class CountryTests(TestCase):
+class SongsTests(TestCase):
 
     def test_temp_text(self):
         country = Client()
@@ -15,11 +15,11 @@ class CountryTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Folk")
 
-    def test_story_text_song(self):
-        client = Client()
-        response = client.get('/song/')
-        self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Song")
+    # def test_story_text_song(self):
+    #     client = Client()
+    #     response = client.get('/song/')
+    #     self.assertEqual(response.status_code, 200)
+    #     self.assertContains(response, "Song")
 
     def test_story_text_signup(self):
         client = Client()
@@ -32,10 +32,10 @@ class CountryTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home.html')
 
-    def test_view_uses_correct_template_song(self):
-        response = self.client.get(reverse('song'))
-        self.assertEqual(response.status_code, 200)
-        self.assertTemplateUsed(response, 'song.html')
+    # def test_view_uses_correct_template_song(self):
+    #     response = self.client.get(reverse('song'))
+    #     self.assertEqual(response.status_code, 200)
+    #     self.assertTemplateUsed(response, 'song.html')
 
     def test_view_uses_correct_template_signup(self):
         response = self.client.get(reverse('signup'))
@@ -51,5 +51,10 @@ class CountryTests(TestCase):
         response = self.client.get(reverse('logout'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'registration/logged_out.html')
+
+    def test_view_uses_correct_template_search(self):
+        response = self.client.get(reverse('search'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'search.html')
 
 
