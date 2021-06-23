@@ -31,9 +31,11 @@ class Customer(models.Model):
         instance.customer.save()
 
 class Song(models.Model):
-    name = models.TextField()
-    description = models.TextField() 
+    songID = models.CharField(max_length=30, default="SOME ID")
+    songName = models.CharField(max_length=30, default="SOME NAME")
+    songAuthor = models.CharField(max_length=30, default="SOME AUTHOR")
+    description = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
-        return f'{self.name},{self.description},{self.created_date}'
+        return f'{self.songID},{self.songName},{self.songAuthor},{self.description},{self.created_date}'
