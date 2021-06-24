@@ -17,8 +17,8 @@ class SignUpForm(UserCreationForm):
 
 class SongForm (forms.ModelForm):
     songID = forms.CharField(max_length=30)
-    songName = forms.CharField(max_length=30)
-    songAuthor = forms.CharField(max_length=30)
+    # songName = forms.CharField(max_length=30)
+    # songAuthor = forms.CharField(max_length=30)
 
     class Meta:
         model = Song

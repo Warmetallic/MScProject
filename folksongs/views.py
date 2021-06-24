@@ -40,7 +40,7 @@ def signup(request):
 def search(request):
     if request.method == "POST":
         searched = request.POST['searched']
-        songs = Song.objects.filter(name__contains=searched)
+        songs = Song.objects.filter(songName__contains=searched)
         return render(request, 'search.html', {'searched': searched, 'songs': songs})
     else:
         return render(request, 'search.html', {})

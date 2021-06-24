@@ -9,7 +9,7 @@
 	<div class="list-group">
 		{% for song in songs %}
 		<li>
-			ID: {{ song.id }} {{ song.name }} Link: 
+			ID: {{ song.id }} {{ song.songName }} Link: 
 			<a href="{% url 'song' song.id %}"> Song's page </a>
 			{% endfor %}
 		</li>

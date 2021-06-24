@@ -32,8 +32,8 @@ class Customer(models.Model):
 
 class Song(models.Model):
     songID = models.CharField(max_length=30, default="SOME ID")
-    songName = models.CharField(max_length=30, default="SOME NAME")
-    songAuthor = models.CharField(max_length=30, default="SOME AUTHOR")
+    songName = models.TextField()
+    songAuthor = models.TextField()
     description = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
 
