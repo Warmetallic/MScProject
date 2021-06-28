@@ -18,6 +18,18 @@ def home(request):
 def song(request, id):
     song = get_object_or_404(Song, id=id)
     return render(request, 'song.html', {'song': song})
+
+def song_add(request):
+    if request.method=="POST":
+        form = SongForm(request.POST)
+        if form.is_valid():
+            song = form.save(commit=False)
+            song.created_date = timezone.now()
+            song.save()
+            return redirect('song', id=song.id)
+    else:
+        form = SongForm()
+    return render(request, 'song_add.html', {'form': form})
     
 
 def signup(request):
