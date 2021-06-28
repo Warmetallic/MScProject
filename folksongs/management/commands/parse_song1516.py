@@ -25,6 +25,7 @@ class Command(BaseCommand):
                 'JONATHAN GAULD and Mrs BEGG,\n Mrs MARGARET GILLESPIE and Rev. JAMES B. DUNCAN-D &G,\n'+
                 'GEORGE F. DUNCAN,\n ROBERT ALEXANDER,\n ALEX MURISON,\n GEORGE CORBET,\n J. W. SPENCE,'+
                 '\n G. G. FARQUHAR,\n GEORGE ANDERSON or J. CALDER,\n Mrs STUART',
-                description = 'some data'
+                description = 'some data',
+                image = "static/images/music-test.png"
                 )
             song.save()

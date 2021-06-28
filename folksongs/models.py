@@ -36,6 +36,8 @@ class Song(models.Model):
     songAuthor = models.TextField()
     description = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
+    image = models.ImageField('img', upload_to='path/')
+
 
     def __str__(self):
-        return f'{self.songID},{self.songName},{self.songAuthor},{self.description},{self.created_date}'
+        return f'{self.songID},{self.songName},{self.songAuthor},{self.description},{self.created_date},{self.image}'
