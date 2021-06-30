@@ -17,6 +17,11 @@ def home(request):
 
 def song(request, id):
     song = get_object_or_404(Song, id=id)
+    # images = request.FILES.getlist('images')
+    # for img in images:
+    #     SongForm.objects.create(images=img)
+    # images = Song.objects.all()
+    # {'images': images}
     return render(request, 'song.html', {'song': song})
 
 def song_add(request):
