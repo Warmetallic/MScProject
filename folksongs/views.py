@@ -26,11 +26,13 @@ def song(request, id):
 
 def song_add(request):
     if request.method=="POST":
-        form = SongForm(request.POST)
+        form = SongForm(request.POST, request.FILES)
         if form.is_valid():
             song = form.save(commit=False)
             song.created_date = timezone.now()
             song.save()
+            song=form.instance
+            # return render(request, 'song_add.html', {'form': form, 'song': song})
             return redirect('song', id=song.id)
     else:
         form = SongForm()

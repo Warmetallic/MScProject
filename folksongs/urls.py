@@ -16,6 +16,10 @@ urlpatterns = [
     # path('about/', views.about, name="about"),
 	# path('details/<int:id>/', views.details, name="details"),
 	# path('404', views.handler404, name="404"),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
 
 #handler404 = 'team.views.handler404'

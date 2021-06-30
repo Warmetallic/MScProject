@@ -1,11 +1,13 @@
 {% extends 'base.html' %}
 {% block content %}
-    <h1>Adding a new song</h1>
-    <form method="POST" enctype="multipart/form-data">
-        <!-- <input type="file" name="images" multiple> -->
-      {% csrf_token %}
-      {{ form.media }}
-      {{ form.as_p}}
-      <button type="submit" name="submit">Save</button>
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+   {{ form.as_p }}
+  <button type="submit">Upload</button>
 </form>
+
+{% if song %}
+  <h3>Succesfully uploaded : {{song.songID}}</h3>
+  <img src="{{ song.image.url}}" alt="connect" style="max-height:300px">
+{% endif %}
     {% endblock %}

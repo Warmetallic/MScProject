@@ -138,5 +138,9 @@ DATABASES['default'].update(db_from_env)
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
+# Base url to serve media files
 MEDIA_URL = '/media/'
+
+# Path where media is stored
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
