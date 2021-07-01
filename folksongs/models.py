@@ -41,3 +41,10 @@ class Song(models.Model):
 
     def __str__(self):
         return f'{self.songID},{self.songName},{self.songAuthor},{self.description},{self.created_date},{self.image}'
+
+class SongImage(models.Model):
+    song = models.ForeignKey(Song, default=None, on_delete=models.CASCADE)
+    image = models.ImageField(upload_to='images')
+
+    def __str__(self):
+        return str(self.song.id)

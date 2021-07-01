@@ -2,6 +2,7 @@
 
 
 {% block content %}
+{% load static %}
 <!--Introduction section-->
 <div class="container">
 	<!-- <div class="col"><h1 class="text-center">Welcome!</h1></div> -->
@@ -14,9 +15,8 @@
 			<div class="card-body"><b>Authors:</b> <br>{{song.songAuthor}}</div>
 			<a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">View</a>
 			<div class="card-footer">{{song.created_date}}</div>
-			<img class="card-img-bottom" src="/static/imgGleb/music.png" alt="hmm" style="width:100%">
+			<img class="card-img-bottom" src="{% static 'songs/1516/12.png' %}" alt="hmm" style="width:100%">
 		</div>
-
 		{% endfor %}
 	</div>
 </div>

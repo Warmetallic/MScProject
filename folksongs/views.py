@@ -4,7 +4,7 @@ from django.contrib.auth import login, authenticate
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import logout
-from .models import Song
+from .models import Song, SongImage
 from .forms import SignUpForm, SongForm
 
 
@@ -17,12 +17,13 @@ def home(request):
 
 def song(request, id):
     song = get_object_or_404(Song, id=id)
+    images = SongImage.objects.filter(song=song)
     # images = request.FILES.getlist('images')
     # for img in images:
     #     SongForm.objects.create(images=img)
     # images = Song.objects.all()
     # {'images': images}
-    return render(request, 'song.html', {'song': song})
+    return render(request, 'song.html', {'song': song, 'images': images})
 
 def song_add(request):
     if request.method=="POST":

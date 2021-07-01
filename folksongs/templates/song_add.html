@@ -3,11 +3,12 @@
 <form method="post" enctype="multipart/form-data">
   {% csrf_token %}
    {{ form.as_p }}
+   <input type="file" name="image" multiple>
   <button type="submit">Upload</button>
 </form>
 
-{% if song %}
+<!-- {% if song %}
   <h3>Succesfully uploaded : {{song.songID}}</h3>
   <img src="{{ song.image.url}}" alt="connect" style="max-height:300px">
-{% endif %}
+{% endif %} -->
     {% endblock %}
