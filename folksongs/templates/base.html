@@ -9,52 +9,55 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" type="text/css" href="/static/style.css">  
 
-      <title>Alpha Team project</title>
+      <title>The Greig-Duncan Folk Song Collection </title>
+      <link rel="aberdeen icon" href="/static/images/aberdeen.png">
+
   </head>
   <body>
 
       <!--Header-->
       <header class="jumbotron header1">
-          <h1>Folks & Songs</h1>
-          <p>Team Alpha</p> 
+          <img src="/static/images/aberdeen-logo.png" style="float: left; width: 20%;"> 
+          <h1 style="padding-right: 175px;">The Greig-Duncan Folk Song Collection</h1>
+          <p style="padding-right: 175px;"> University of Aberdeen </p> 
       </header>
       <!--Navigation panel-->
-      <nav class="navbar sticky-top navbar-expand-lg nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="{% url 'home' %}">Folks & Songs</a>
+      <nav class="navbar sticky-top navbar-expand-lg nav" style="background: navy; color: white;">
+        <div class="container-fluid" style="color: white;">
+          <a class="navbar-brand" href="{% url 'home' %}" style="color: white;">The Greig-Duncan Folk Song Collection</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 linksList">
               <li class="nav-item">
-                <a class="nav-link linkElement" href="#">Link</a>
+                <a class="nav-link linkElement" href="#" style="color: white;"> Collections </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="" style="color: white;"> Songs </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="" style="color: white;"> Admin </a>
             </li>
         </ul>
         <form class="d-flex" method=POST action="{% url 'search' %}">
             {% csrf_token %}
           <input class="form-control me-2" type="search" placeholder="Search Songs" aria-label="Search" name="searched">
-          <button class="btn btn-dark" type="submit">Search</button>
+          <button class="btn" type="submit" style="background: gold;">Search</button>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               {% if user.is_authenticated %}
               <li class="nav-item">
                 <a class="nav-link" href="#">Profile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'logout' %}?next=/">LogOut</a>
+                <a class="nav-link" href="{% url 'logout' %}?next=/" style="color: white;">LogOut</a>
               </li>
               {% else %}
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'login' %}?next=/"">Login</a>
+                <a class="nav-link" href="{% url 'login' %}?next=/" style="color: white;">Login</a>
               </li>
               <li class="nav-item">
-                <a href="{% url 'song_add' %}" class="btn btn-secondary">Add...</a>
+                <a href="{% url 'song_add' %}" class="btn btn-secondary" style="color: white;">Add...</a>
               </li>
               {% endif %}
         </ul>

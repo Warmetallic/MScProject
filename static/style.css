@@ -44,12 +44,12 @@
 
 
 .nav a:active:not(.navbar-brand){
-  background-color: black;
+  background-color: gold;
   color: white;
 }
 
 .nav  a:hover:not(.navbar-brand){
-    background-color: lightgray;
+    background-color: gold;
     border-radius: 5px; 
 }
 
@@ -118,11 +118,11 @@ color: white;
 
 
 #bTest {
-  border: solid black 1px;
+  border: solid gold 1px;
 }
 
 #login-style {
-  margin-left: 450px;
+  margin-left: 500px;
 }
 
 
