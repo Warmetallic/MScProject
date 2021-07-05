@@ -34,13 +34,15 @@ class Song(models.Model):
     songID = models.CharField(max_length=30, default="SOME ID")
     songName = models.TextField()
     songAuthor = models.TextField()
+    songVolume = models.TextField(default="SOME VOLUME")
+    songGenre = models.TextField(default="SOME GENRE")
     description = models.TextField()
     created_date = models.DateTimeField(auto_now_add=True)
     image = models.ImageField(upload_to='images')
 
 
     def __str__(self):
-        return f'{self.songID},{self.songName},{self.songAuthor},{self.description},{self.created_date},{self.image}'
+        return f'{self.songID},{self.songName},{self.songAuthor},{self.description},{self.created_date},{self.image},{self.songVolume},{self.songGenre}'
 
 class SongImage(models.Model):
     song = models.ForeignKey(Song, default=None, on_delete=models.CASCADE)
