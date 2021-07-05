@@ -66,6 +66,7 @@
 
 /*modified jumborton class (header)  */
 .header1{
+  display: inline-block;
   text-align: center;
   margin:0;
   background-color: white;
@@ -73,6 +74,11 @@
   background-position: 65% 50%;
   background-repeat: no-repeat;
   color: black;
+}
+
+.header1 h1{
+  margin: 30px 650px;
+  padding-left: 100px;
 }
 
 /*modifies the footer section (jumbotron class)  */
@@ -90,9 +96,9 @@ color: white;
 }
 
 
-.grid-container {
+/*.grid-container {
   display: grid;
-  grid-template-columns:60px 60px 60px 60px;
+  grid-template-columns:auto auto auto auto;
   grid-gap: 10px;
   background-color: rgb(232, 232, 232);
   border: 1px solid black;
@@ -105,10 +111,24 @@ color: white;
   border: 1px solid black;
   text-align: center;
   font-size: 25px;
+}*/
+
+
+
+.wrap{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+.serv{
+  list-style: none;
+  flex: 0 0 32.333333%;
 }
 
 .card-home{
-  align-items: center;
+  width: 200px;
+  height: 400px;
 }
 
 .btn-home{
@@ -123,4 +143,9 @@ color: white;
 
 #login-style {
   margin-left: 500px;
+}
+
+.logo {
+  float: left;
+
 }
