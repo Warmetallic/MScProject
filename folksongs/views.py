@@ -64,3 +64,10 @@ def search(request):
         return render(request, 'search.html', {'searched': searched, 'songs': songs})
     else:
         return render(request, 'search.html', {})
+
+
+
+
+
+
+
