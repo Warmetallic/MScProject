@@ -16,7 +16,13 @@
   border-width:1px;
   margin: 0px;
 }
+.xtext {
+  display:flex;
+  justify-content: space-between;
+  position: relative;
+  left: auto;
 
+}
 
 /* Style the topnav links */
 .nav a {
@@ -77,7 +83,7 @@
 }
 
 .header1 h1{
-  margin: 30px 650px;
+  margin: 30px 50px;
   padding-left: 100px;
 }
 
