@@ -43,7 +43,8 @@
           </ul>
           <form class="d-flex" method=POST action="{% url 'search' %}">
             {% csrf_token %}
-            <input class="form-control me-2" type="search" placeholder="Search Songs" aria-label="Search" name="searched">
+            <input class="form-control me-2" type="search" placeholder="Search Songs" aria-label="Search" name="name">
+            <input class="form-control me-2" type="search" placeholder="Search Volumes" aria-label="Search" name="volume">
             <button class="btn" type="submit" style="background: gold;">Search</button>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               {% if user.is_authenticated %}

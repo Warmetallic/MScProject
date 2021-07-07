@@ -59,9 +59,13 @@ def signup(request):
 
 def search(request):
     if request.method == "POST":
-        searched = request.POST['searched']
-        songs = Song.objects.filter(songName__contains=searched)
-        return render(request, 'search.html', {'searched': searched, 'songs': songs})
+        name = request.POST.get('name', False)
+        volume = request.POST.get('volume', False)
+        songs = Song.objects.filter(songName__contains=name)
+        volumes = Song.objects.filter(songVolume__contains=volume)
+        songVolume = Song.objects.filter(songName__contains=name, songVolume__contains=volume)
+        return render(request, 'search.html', {'name': name,'volume': volume,'songs': songs,
+            'volumes': volumes,'songVolume': songVolume})
     else:
         return render(request, 'search.html', {})
 

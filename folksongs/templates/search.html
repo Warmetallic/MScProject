@@ -1,23 +1,53 @@
 {% extends 'base.html' %}
 {% block content %}
 <center>
-	{% if searched %}
-	<h1>{{ searched }} Search Results...</h1>
+{% if name|length > 0 and volume|length > 0 %}
+	<h1>The song title: {{ name }} Volume: {{ volume }}</h1>
 	<br>
 </center>
 <ol>
 	<div class="list-group">
-		{% for song in songs %}
+		{% for song in songVolume %}
 		<li>
-			ID: {{ song.id }} {{ song.songName }} Link: 
+			ID:{{ song.id }} Title: {{ song.songName }} Volume: {{ song.songVolume }} Link: 
 			<a href="{% url 'song' song.id %}"> Song's page </a>
 			{% endfor %}
 		</li>
 	</div>
 </ol>
 
+{% elif name|length == 0 and volume|length > 0 %}
+	<h1>Volume number: {{ volume }} </h1>
+	<br>
+</center>
+<ol>
+	<div class="list-group">
+		{% for song in songVolume %}
+		<li>
+			ID: {{ song.id }} Volume: {{ song.songVolume }} Title: {{ song.songName }} Link: 
+			<a href="{% url 'song' song.id %}"> Song's page </a>
+			{% endfor %}
+		</li>
+	</div>
+</ol>
+
+{% elif name|length > 0 and volume|length == 0 %}
+	<h1> Title: {{ name }} </h1>
+	<br>
+</center>
+<ol>
+	<div class="list-group">
+		{% for song in songVolume %}
+		<li>
+			ID: {{ song.id }} Title: {{ song.songName }} Volume: {{ song.songVolume }} Link: 
+			<a href="{% url 'song' song.id %}"> Song's page </a>
+			{% endfor %}
+		</li>
+	</div>
+</ol>
 
 {% else %}
 <h1> Empty Search Field</h1>
+
 {% endif %}
 {% endblock %}
