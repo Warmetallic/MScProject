@@ -13,11 +13,12 @@
     <div class="card-header" id="bTest" style="border: solid 1px gold;">
       <div class="card">
         <div class="card-header">
-         <b><h1>Song Title: {{song.songName}} </h1></b>
+         <b><h1>Song ID - {{song.songID}} </h1></b>
        </div>
        <div class="card-body">
         <h5 class="card-title">Information about this song </h5>
         <p class="card-text">  
+          <b>Titles: </b> {{song.songName}} <br>
           <b>Authors: </b> {{song.songAuthor}}
 
         </p>
@@ -43,14 +44,15 @@
           <div class="card-body">
             <h5 class="card-title"><b>Song details and further links</b></h5>
             <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <p class="card-text">ID: {{song.id}}</p>
             <p class="card-text">Description: {{song.description}}</p>
-            <p class="card-text">Date Created: {{song.created_date}}</p>
+            <p class="card-text">Date: {{song.created_date}}</p>
           </div>
         </div>
       </div>
     </div>
     <br/>
-    <br/>
+    <br>
 
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -59,24 +61,24 @@
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-        <div class="carousel-inner">
-          {% for i in images%}
-          <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
-            <img class="d-block w-100" src="{{i.image.url}}" alt="Second slide">
-          </div>
-          {% endfor %}
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+      <div class="carousel-inner">
+        {% for i in images%}
+        <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
+          <img class="d-block w-100" src="{{i.image.url}}" alt="Second slide">
         </div>
+        {% endfor %}
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
-  </body>
-  {% endblock %}
+  </div>
+</body>
+{% endblock %}
 
 <!-- src="{% static 'songs/3.png' %}" -->

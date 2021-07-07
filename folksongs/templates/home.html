@@ -39,51 +39,7 @@
 </br></br> 
 
 
-<!-- <div class="container" style="background: white; border-radius: 5px; padding: 30px;">
 
-{% for song in songs %}
-<div class="card-deck" >
-  <div class="card" style="border: solid 1px gold;">
-    <img class="card-img-top" src="static/images/music-test.png" alt="Card image cap" >
-    <div class="card-body">
-      <h5 class="card-title">{{song.songName}}</h5>
-      <div class="card-body"><b>Authors:</b> <br> {{song.songAuthor}} </div>
-      <a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">View</a>
-    </div>
-
-  </br></br> 
-
-  </div>
-  <div class="card" style="border: solid 1px gold;">
-    <img class="card-img-top" src="static/images/music-test.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{song.songName}}</h5>
-      <div class="card-body"><b>Authors:</b> <br> {{song.songAuthor}} </div>
-      <a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">View</a>
-    </div>
-  </div>
-  <div class="card" style="border: solid 1px gold;">
-    <img class="card-img-top" src="static/images/music-test.png" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">{{song.songName}}</h5>
-      <div class="card-body"><b>Authors:</b> <br> {{song.songAuthor}} </div>
-      <a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">View</a>
-    </div>
-  </div>
-</div>
-
-</br></br> 
-  {% endfor %}
-</div>
-
-</br></br> 
-
-</body>
- -->
-
-
-<!-- <div class="container"> -->
-	<!-- <div class="col"><h1 class="text-center">Welcome!</h1></div> -->
 <div class="container">
 <div class="grid-container">
   {% for song in songs %}
@@ -98,28 +54,4 @@
 {% endfor %}
 </div>
 </div>
-
-<!--
-<div class="container">
-	<div class="grid-container">
-		{% for song in songs %}
-		<div class="card card-home">
-			<div class="card-header"><b>ID: {{song.songID}}</b> <br> <b>Titles:</b> <br>{{song.songName}}</div>
-			<div class="card-body"><b>Authors:</b> <br> {{song.songAuthor}} </div>
-			<a href="{% url 'song' id=song.id %}" class="btn btn-secondary btn-home">View</a>
-		</div>
-		{% endfor %}%
-</div>
-</div>
 {% endblock %}
-
--->
-
-
-
-
-
-
-
-
-
