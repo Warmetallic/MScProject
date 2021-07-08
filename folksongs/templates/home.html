@@ -46,9 +46,9 @@
 <div class="card">
   <img class="card-img-top" src="/static/images/music-test.png" alt="Card image cap">
   <div class="card-body">
-    <h5 class="card-title">{{song.songName}}</h5>
-    <p class="card-text"> Authors: {{song.songAuthor}} </p>
-    <a href="{% url 'song' id=song.id %}" class="btn btn-warning">View Song</a>
+    <h5 class="card-title limitText">{{song.songName}}</h5>
+    <p class="card-text limitText"> Authors: {{song.songAuthor}} </p>
+    <a href="{% url 'song' id=song.id %}" class="btn btn-warning btn-block" id="bottonHome">View Song</a>
   </div>
 </div>
 {% endfor %}
