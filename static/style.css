@@ -9,7 +9,7 @@
   height: 70px;
 /*  overflow: hidden;*/
   overflow-y: visible !important;
-  background-color: rgb(232, 232, 232);
+  background-color: navy;
   font-size: 20px;
   padding: 0;
   border-top-style: solid;
@@ -30,7 +30,7 @@
   float: left;
   display: block;
   margin: 0px 20px;
-  color: black;
+  color: white;
   text-align: center;
   text-decoration: none;
 }
@@ -50,14 +50,14 @@
 }*/
 
 
-.nav a:active:not(.navbar-brand){
+/*.nav a:active:not(.navbar-brand){
   background-color: gold;
   color: white;
-}
+}*/
 
 .nav  a:hover:not(.navbar-brand){
     background-color: gold;
-    border-radius: 5px; 
+    color: black;
 }
 
 
@@ -118,14 +118,6 @@ color: white;
 }
 
 
-
-.wrap{
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 0;
-}
-
-
 .card-home{
   width: 200px;
   text-align: center;
@@ -156,14 +148,25 @@ color: white;
   background: rgb(255,255,240, 0.6);
 }
 
+.searchButton{
+  background-color: gold;
+  color: black;
+}
+
+.searchField{
+}
+
+.dropdownButton{
+  color: black;
+  background-color: gold;
+  margin-right: 25px;
+}
+
 
 /*code adapted from - https://www.benmarshall.me/max-character-length-ellipsis-css/  */
 .limitText {
   overflow: hidden;
   max-width: 75ch;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  
-
-
+  white-space: nowrap; 
 }
