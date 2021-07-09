@@ -62,6 +62,22 @@
 	</div>
 </ol>
 
+
+{% elif name|length > 0 and volume|length > 0 %}
+	<h1> Title: {{ name }} </h1>
+	<br>
+</center>
+<ol>
+	<div class="list-group">
+		{% for song in songFilters %}
+		<li>
+			ID: {{ song.id }} Title: {{ song.songName }} Author: {{ song.songAuthor }} Link: 
+			<a href="{% url 'song' song.id %}"> Song's page </a>
+			{% endfor %}
+		</li>
+	</div>
+</ol>
+
 {% else %}
 <h1> Empty Search Field</h1>
 
