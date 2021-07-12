@@ -163,6 +163,13 @@ color: white;
 }
 
 
+.collapseButton{
+  color: black;
+  background-color: gold;
+  margin-left: 15px;
+}
+
+
 /*code adapted from - https://www.benmarshall.me/max-character-length-ellipsis-css/  */
 .limitText {
   overflow: hidden;

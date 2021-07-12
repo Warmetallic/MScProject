@@ -27,27 +27,15 @@
     </div>
     <br/>
     <div class="row">
-      <div class="col-sm-6">
-        <div class="card">
+      <div class="col-sm-8">
+        <button class="btn collapseButton" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+          More details
+        </button>
+        <div class="collapse" id="collapseExample">
           <div class="card-body">
-            <h5 class="card-title"> <b>Music Notation notes</b></h5>
-            <p class="card-text">Below you will find music notation on - Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="card">
-          <div class="card-body">
-            <h5 class="card-title"><b>Song details and further links</b></h5>
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <p class="card-text">ID: {{song.id}}</p>
-            <p class="card-text">Description: {{song.description}}</p>
-            <p class="card-text">Date: {{song.created_date}}</p>
+            <p class="card-text"><b>ID:</b> {{song.id}}</p>
+            <p class="card-text"><b>Description:</b> {{song.description}}</p>
+            <p class="card-text"><b>Date:</b> {{song.created_date}}</p>
           </div>
         </div>
       </div>
@@ -59,26 +47,26 @@
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
        {% for i in images%}
-           <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter0}}" class="{% if forloop.counter0 == 0 %} active {%endif%}" aria-current="true" aria-label="Slide 1"></button>
-        {% endfor %}
+       <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="{{forloop.counter0}}" class="{% if forloop.counter0 == 0 %} active {%endif%}" aria-current="true" aria-label="Slide 1"></button>
+       {% endfor %}
+     </div>
+     <div class="carousel-inner">
+      {% for i in images%}
+      <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
+        <img class="d-block w-100" src="{{i.image.url}}" alt="Second slide">
       </div>
-      <div class="carousel-inner">
-        {% for i in images%}
-        <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %}">
-          <img class="d-block w-100" src="{{i.image.url}}" alt="Second slide">
-        </div>
-        {% endfor %}
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+      {% endfor %}
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </div>
+</div>
 </body>
 {% endblock %}
 
