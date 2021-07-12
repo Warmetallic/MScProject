@@ -62,10 +62,10 @@ def search(request):
         name = request.POST.get('name', False)
         volume = request.POST.get('volume', False)
         author = request.POST.get('author', False)
-        songs = Song.objects.filter(songName__iexact=name)
-        volumes = Song.objects.filter(songVolume__iexact=volume)
-        authors = Song.objects.filter(songAuthor__iexact=author)
-        songFilters = Song.objects.filter(songName__iexact=name, songVolume__iexact=volume, songAuthor__iexact=author)
+        songs = Song.objects.filter(songName__contains=name)
+        volumes = Song.objects.filter(songVolume__contains=volume)
+        authors = Song.objects.filter(songAuthor__contains=author)
+        songFilters = Song.objects.filter(songName__contains=name, songVolume__contains=volume, songAuthor__contains=author)
         return render(request, 'search.html', {'name': name,'volume': volume,'author': author,'songs': songs,
             'volumes': volumes,'songFilters': songFilters})
     else:
