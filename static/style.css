@@ -169,6 +169,12 @@ color: white;
   margin-left: 15px;
 }
 
+.topCardImg{
+  align-items: center;
+  width: 100%;
+  height: 212px;
+}
+
 
 /*code adapted from - https://www.benmarshall.me/max-character-length-ellipsis-css/  */
 .limitText {

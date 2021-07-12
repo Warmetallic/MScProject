@@ -3,17 +3,17 @@ import pytesseract
 import os.path
 
 # convert all files ending in .jpg inside a directory
-dirname = "C:\\songs\\1517"
+dirname = "C:\\songs\\1530"
 i = 0
 text = []
 pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 
 # print(pytesseract.image_to_string(r'C:\copy\djangoproject\Alpha-2021\static\songs\GDFSC_v8_0048.tif'))
 
-with open('test.txt', 'w') as f:
-	f.write(pytesseract.image_to_string(r'C:\\songs\\1517\\15171.png'))
+# with open('test.txt', 'w') as f:
+# 	f.write(pytesseract.image_to_string(r'C:\\songs\\1520\\15201.png'))
 
-f.close()
+# f.close()
 
 
 for fname in os.listdir(dirname):
@@ -27,7 +27,7 @@ for fname in os.listdir(dirname):
 
 	with open('test.txt', 'a') as f:
 		f.write('PAGE START:============================================================\n')
-		f.write(pytesseract.image_to_string(r'C:\\songs\\1517\\1517'+str(i)+'.png'))
+		f.write(pytesseract.image_to_string(r'C:\\songs\\1530\\1530'+str(i)+'.png'))
 
 f.close()
 
