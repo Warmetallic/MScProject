@@ -15,6 +15,12 @@ class SongsTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Folk")
 
+    def test_story_map(self):
+        client = Client()
+        response = client.get('/map')
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "map")
+
     # def test_story_text_song(self):
     #     client = Client()
     #     response = client.get('/song/')
@@ -31,6 +37,11 @@ class SongsTests(TestCase):
         response = self.client.get(reverse('home'))
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'home.html')
+
+    def test_view_uses_correct_template_map(self):
+        response = self.client.get(reverse('map'))
+        self.assertEqual(response.status_code, 200)
+        self.assertTemplateUsed(response, 'map.html')
 
     # def test_view_uses_correct_template_song(self):
     #     response = self.client.get(reverse('song'))
