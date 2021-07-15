@@ -15,11 +15,18 @@ class SongsTests(TestCase):
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "Folk")
 
+    def test_story_search(self):
+        client = Client()
+        response = client.get('/search')
+        self.assertEqual(response.status_code, 200)
+        self.assertContains(response, "Search")
+
     def test_story_map(self):
         client = Client()
         response = client.get('/map')
         self.assertEqual(response.status_code, 200)
         self.assertContains(response, "map")
+
 
     # def test_story_text_song(self):
     #     client = Client()
