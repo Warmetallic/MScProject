@@ -175,6 +175,14 @@ color: white;
   height: 212px;
 }
 
+.map{
+  align-items: center;
+}
+
+.mapp{
+  margin: 20px;
+}
+
 
 /*code adapted from - https://www.benmarshall.me/max-character-length-ellipsis-css/  */
 .limitText {

@@ -12,7 +12,7 @@
       <link href="/static/style.css" type="text/css" rel="stylesheet">  
 
       <title>The Greig-Duncan Folk Song Collection </title>
-      <link rel="aberdeen icon" href="{% static 'imgs/aberdeen.png' %}" style="border-radius: 5px;">
+      <link rel="aberdeen icon" href="{% static 'imgs/aberdeen.png' %}">
 
     </head>
     <body>
@@ -24,18 +24,18 @@
      </header>
      <!--Navigation panel-->
      <nav class="navbar sticky-top navbar-expand-lg nav">
-      <div class="container-fluid" style="color: white;">
-        <a class="navbar-brand" href="{% url 'home' %}" style="color: white;">The Greig-Duncan Folk Song Collection</a>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'home' %}">The Greig-Duncan Folk Song Collection</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 linksList">
             <li class="nav-item">
-              <a class="nav-link linkElement" href="#"> Collections </a>
+              <a class="nav-link" href="{% url 'home'%}"> Songs </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href=""> Songs </a>
+              <a class="nav-link linkElement" href="{% url 'map'%}"> Map </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="https://stark-mesa-89039.herokuapp.com/admin/"> Admin </a>

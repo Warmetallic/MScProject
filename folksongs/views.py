@@ -72,6 +72,9 @@ def search(request):
         return render(request, 'search.html', {})
 
 
+def map(request):
+    return render(request, 'map.html', {})
+
 
 
 
