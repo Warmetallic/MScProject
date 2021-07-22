@@ -1,0 +1,385 @@
+commit 981780b5815612e43ad108592ba921ade252191d
+Author: Gleb Kharlamov <35700332+Warmetallic@users.noreply.github.com>
+Date:   Mon Jul 19 21:05:24 2021 +0100
+
+    Delete .env
+
+commit 32e5982e1db49759a33ab036a2972ea485af2795
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 19 20:55:47 2021 +0100
+
+    fix3
+
+commit a8622f406fac76ea6aa965d0a3f5eb4d395aa16c
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 19 20:16:38 2021 +0100
+
+    fix2
+
+commit 79a3861afc4916cb9207a88ffbc4dfcc6d4d87cf
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 19 20:08:36 2021 +0100
+
+    heroku fix
+
+commit 64a6d5fd4a305d4c078379bbdec2964b47225759
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 19 20:04:57 2021 +0100
+
+    req
+
+commit 73f76d598841cedb4ecdc3598b4ba65dbe7d8f94
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 19 20:01:56 2021 +0100
+
+    hiding keys with decouple and gitignore
+
+commit 0a7e9dbcdf8b01f39509cdcd733e07d95cd766eb
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 19 10:19:09 2021 +0100
+
+    new req
+
+commit b7da87cc495286c502b5cc9592f8052a8eb08aca
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 15 12:00:19 2021 +0100
+
+    new unittests
+
+commit 5e4929c65552dd8d1985395d8a637fbc13f4c13b
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 15 11:57:03 2021 +0100
+
+    new unittests
+
+commit 93cdb9a5f040fef25440aeeee6340a5ac2b3fa04
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 15 11:50:22 2021 +0100
+
+    added the map, page, views,url,etc
+
+commit 4251830d428f30db0cd6aa20fa85eea3b0d7f6db
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 12 19:38:02 2021 +0100
+
+    home page and css improvements
+
+commit 12dfe605a0700e99481af71c43cb2450d922f56d
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 12 17:28:25 2021 +0100
+
+    css changes
+
+commit 06f4a61cd320b6932b3009fed02e37c7ede13d7d
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 12 16:58:21 2021 +0100
+
+    search case sensitive
+
+commit e019da35935cae00940fcc0dd84e21451d4c277f
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 12 16:46:58 2021 +0100
+
+    search fix
+
+commit 3efee4e1066054dfe359e5d9ee54405b81134b44
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 12 16:39:25 2021 +0100
+
+    song page changed, collapse button, removed some text
+
+commit ec9ef42e07bfc999851cec5f56e9db0732ee5c50
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Fri Jul 9 10:27:05 2021 +0100
+
+    fix search
+
+commit 2aa92987e412f33ea5ed141f72e5568735bdf438
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 8 17:58:43 2021 +0100
+
+    heroku settings
+
+commit 9fd6c2c480485f7d42c3f20cb9c20b705596e828
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 8 17:56:06 2021 +0100
+
+    Set S3 Amazon, all static and media files stored on Amazon
+
+commit d9db6e1ff87a5414ef67ae16490c37194aa67814
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 8 15:15:11 2021 +0100
+
+    removed css from html to css file, worked on the navbar, link to heroku adim area
+
+commit 841f9a7ea8821c79b08eea71dc3ce4c16daea242
+Merge: bef30bb a3a449f
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 8 14:36:52 2021 +0100
+
+    Merge branch 'main' of github.com:UoA-CS5942/Alpha-2021
+
+commit bef30bb275c2c9f465040a703b0de66f5a9fc4ee
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 8 14:35:23 2021 +0100
+
+    multisearch, added authors, droplist
+
+commit a3a449fe9df70d8f8fe681181fc865068aff87ff
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Thu Jul 8 10:55:29 2021 +0100
+
+    fixed standard size for all card lettering, buttons in correct position now
+
+commit 42b4192978cff7f174484d4a9830269279b89602
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 8 09:26:53 2021 +0100
+
+    django pillow
+
+commit 99c1f7d33b3179a81bdf09ed30e5b31682f727f4
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jul 7 21:43:40 2021 +0100
+
+    multi search feature added name and volume
+
+commit c582aa6479c74b8fc43a0280fbb06cb14764020d
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jul 7 10:30:00 2021 +0100
+
+    fix carousel
+
+commit f93ff37d0d10a18af3f591d58722f8c3ad561475
+Merge: 99b7c67 14019f9
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jul 7 10:14:14 2021 +0100
+
+    Merge branch 'main' of github.com:UoA-CS5942/Alpha-2021
+
+commit 99b7c6735d7ad91693281127ce152b8c8d62d752
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jul 7 10:13:09 2021 +0100
+
+    2
+
+commit 14019f95460e101b7e45baedc9b196f29eb03940
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Wed Jul 7 10:08:53 2021 +0100
+
+    more songs
+
+commit 78fe58ea420553a344e060afeec6e4dfdd234966
+Author: Charlotte-zl <haixuanxin@gmail.com>
+Date:   Tue Jul 6 19:43:49 2021 +0800
+
+    tittle layout
+
+commit cd510b0d6f6c2f8ac878bd1d43d7f3a008757268
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Tue Jul 6 10:21:31 2021 +0100
+
+    updating cards and css on home page
+
+commit 2650b389225fe2aca1d9ee890e4dba4097f2e124
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 5 12:29:16 2021 +0100
+
+    css
+
+commit ba9da4207460a8768cc683c6de2f297a565d4e42
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 5 12:25:39 2021 +0100
+
+    fix css home page
+
+commit 7f1e9510030201cef24409a211c1fb47e6686174
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 5 12:17:59 2021 +0100
+
+    css
+
+commit 6feeec5dc50dc0abe568cc41faa751e3360ddcab
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jul 5 10:17:08 2021 +0100
+
+    css work
+
+commit 6b434066837ca38728260251a83112058f488f7f
+Author: Christopher McKeagney <christophermckeagney@ChristophersMBP.fritz.box>
+Date:   Sat Jul 3 21:35:49 2021 +0100
+
+    updated the css and added university style and colours
+
+commit 7e2b0ec21c295c848a260326ff1a4bec20be108c
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jul 1 11:00:31 2021 +0100
+
+    added admin tools, song page carousel
+
+commit 9f8cc910da9b15d6d50bcfdab13d9a141e54cf95
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jun 30 14:12:43 2021 +0100
+
+    media is working!!!!
+
+commit ebdf3dfc8fe1c7fa3c025a8aa90d93d5af4dd775
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jun 30 10:12:36 2021 +0100
+
+    working on media
+
+commit 6bc55193c93511c18a140e753fe63f4d5c8b11fe
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jun 28 14:56:27 2021 +0100
+
+    forms work with imgs
+
+commit de42de648cd80687a7d66694daa0e85cf70f6a98
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Mon Jun 28 13:10:08 2021 +0100
+
+    working with imgs and db
+
+commit 8eaf83133222de7f1b62c309322218fbb03bafb6
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Fri Jun 25 09:56:55 2021 +0100
+
+    asd
+
+commit c0390b8dd5e660c6f6883bc57c15afccc6630523
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jun 24 14:34:35 2021 +0100
+
+    changing home and song pages with new models, adding carousel
+
+commit 41feb95bf94d6c5aa4c460bd4c9e8194d469e2da
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jun 23 22:11:20 2021 +0100
+
+    added new fields to models.py
+
+commit b1907f33d8652d8c46de9f7d520cd911f6f942f6
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jun 23 21:24:27 2021 +0100
+
+    Created a script songtxt.py to get all text data from tif files, using tesseract lib
+
+commit f104e1524ce85912599cb493902894581d191810
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Thu Jun 17 11:48:19 2021 +0100
+
+    unittesting
+
+commit 64b2ca15f9e3a823911c6b6ec9625d8924e4efa7
+Merge: 31a2749 fdc5f9a
+Author: McKeagney <71799429+McKeagney@users.noreply.github.com>
+Date:   Wed Jun 16 22:16:03 2021 +0100
+
+    Merge pull request #4 from UoA-CS5942/Shmac
+    
+    testing a git hub q
+
+commit fdc5f9ad39439760d7e3a7c1afed073f7822bf81
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Wed Jun 16 22:15:31 2021 +0100
+
+    testing a git hub q
+
+commit 31a2749ddb52bf12048c873aaeb2d392a523f329
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Wed Jun 16 22:12:37 2021 +0100
+
+    adjusting writing and bolding titles
+
+commit 8e50091821c4160f12de02309bf42fd77569e169
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Wed Jun 16 21:58:34 2021 +0100
+
+    refined code on song page, added border continuity, added relevant styles to style sheet
+
+commit 7f4f90e610017261dea605a8f43829b4eb3dab3d
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Wed Jun 16 21:24:42 2021 +0100
+
+    refactored code, added small css changes to login and register page
+
+commit 08618e311490a801d81accf23a5cd5c05a18e5a6
+Merge: b9fbb52 615efe6
+Author: McKeagney <71799429+McKeagney@users.noreply.github.com>
+Date:   Wed Jun 16 19:22:45 2021 +0100
+
+    Merge pull request #3 from UoA-CS5942/Shmac
+    
+    working on ongoing changes to login and registration pages
+
+commit 615efe60a20bb6313f1a7667ec6cd929ef592a9e
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Wed Jun 16 19:21:31 2021 +0100
+
+    working on ongoing changes to login and registration pages
+
+commit b9fbb5277c02223b4cccac12fb414633f30842dc
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Wed Jun 16 17:11:42 2021 +0100
+
+    added search function, worked with the home page
+
+commit 792d5a71202498de68ddd4860238efbee021b08f
+Merge: b7be982 d2eadf3
+Author: Gleb Kharlamov <35700332+Warmetallic@users.noreply.github.com>
+Date:   Tue Jun 15 20:12:44 2021 +0100
+
+    Merge pull request #2 from UoA-CS5942/Gleb
+    
+    home page, catalog with songs added, css/bootstrap
+
+commit d2eadf334e2368890596c93fb8e3e1d4500388a8
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Tue Jun 15 20:04:08 2021 +0100
+
+    home page
+
+commit b7be9820cd5969e91536ce8f17c34f6a5c19091b
+Merge: ab34042 f65f55b
+Author: McKeagney <71799429+McKeagney@users.noreply.github.com>
+Date:   Tue Jun 15 19:37:59 2021 +0100
+
+    Merge pull request #1 from UoA-CS5942/Shmac
+    
+    added to the long page with a card layout and adjusted details and ex…
+
+commit f65f55bfb335fd4c8fc12b4e3003f3fdc34cae79
+Author: Christopher McKeagney <christophermckeagney@christophersmbp.home>
+Date:   Tue Jun 15 19:37:14 2021 +0100
+
+    added to the long page with a card layout and adjusted details and examples
+
+commit ab34042c0c6e83b5adb32c1e80e9c17943e78729
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Tue Jun 15 11:46:55 2021 +0100
+
+    transfer
+
+commit aad7530532cedb99806826b52a9c476f928df2a4
+Author: Gleb Kharlamov <scream10@list.ru>
+Date:   Tue Jun 15 11:44:47 2021 +0100
+
+    AAAA
+
+commit 91bd35fa928768db03461ac92715e464c60c7004
+Author: CHRISTOPHER MCKEAGNEY <c.mckeagney.20@abdn.ac.uk>
+Date:   Fri Jun 4 09:06:05 2021 +0000
+
+    test
+
+commit 774bc02abd57257a5e2df83192f113447ef888a8
+Author: CHRISTOPHER MCKEAGNEY <c.mckeagney.20@abdn.ac.uk>
+Date:   Tue Jun 1 10:00:20 2021 +0000
+
+    will this work
+
+commit b54f8a541494b2f00eb717e4d062ad489ede8579
+Author: Bruce Scharlau <b.scharlau@abdn.ac.uk>
+Date:   Thu May 27 18:57:07 2021 +0100
+
+    Initial commit
