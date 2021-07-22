@@ -1,4 +1,4 @@
-#The Greig-Duncan Folk Song Collection
+# The Greig-Duncan Folk Song Collection
 
 The main purpose of this web application is to store and display The Greig-Duncan Folk Song Collection. All data was provided by Dr. McKean in 8 volumes with hundreds of musical notations. The link to dataset: https://www.dropbox.com/sh/k4qcsdi19vu8thl/AACJB0q9AKmo6k-rYiYGDevwa?dl=0 
 
@@ -34,7 +34,7 @@ The version control system was used to create this project. It allowed our team 
 
 The project is deployed on Heroku.
 
-The website link:https://stark-mesa-89039.herokuapp.com/
+The website link: https://stark-mesa-89039.herokuapp.com/
 
 Authorisation details for admin:
 -Username: admin
