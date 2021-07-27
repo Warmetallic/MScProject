@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<body>
+
+  <div class="container">
+
+
+    <div class="card">
+      <div class="card-header">
+        <h1 class="helpheader">Need Help?</h1>
+        <p class="helpheader">Please do not hesitate to contact us. Our team will gladly help you as soon as possible!</p>
+      </div>
+      <div class="card map">
+        <div class="card-body map">
+          <div class="form-row">
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault01">First name</label>
+              <input type="text" class="form-control" placeholder="First name">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefault02">Last name</label>
+              <input type="text" class="form-control" placeholder="Last name">
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="validationDefaultUsername">Email</label>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="@">
+              </div>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="exampleFormControlTextarea1">Question</label>
+           <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+         </div>
+       </div>
+       <div>
+        <div class="card-body">
+         <button class="btn searchButton">Send</button>
+       </div>
+     </div>
+   </div>
+
+
+ </div>
+
+ {% endblock %}

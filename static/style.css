@@ -191,3 +191,8 @@ color: white;
   text-overflow: ellipsis;
   white-space: nowrap; 
 }
+
+
+.helpheader{
+  text-align: center;
+}

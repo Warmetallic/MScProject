@@ -14,6 +14,7 @@ urlpatterns = [
   path('song_add/', views.song_add, name= 'song_add'),
   path('search', views.search, name= 'search'),
   path('map', views.map, name= 'map'),
+  path('help', views.help, name= 'help'),
     # path('about/', views.about, name="about"),
 	# path('details/<int:id>/', views.details, name="details"),
 	# path('404', views.handler404, name="404"),
