@@ -196,3 +196,7 @@ color: white;
 .helpheader{
   text-align: center;
 }
+
+.helplist{
+  margin-left: 20px;
+}
