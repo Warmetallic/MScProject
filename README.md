@@ -48,10 +48,10 @@ The provided data is in TIFF format and every single file is around 80 Mbs, whic
 
 All secret keys for Django and Amazon S3 Bucket are stored in the separate .env file. The file is stored in the gitignore, so it is hidden from everybody. Also, it is required to add Config Vars with the secret keys on Heroku.
 
-Create a new .env file with this data and add to the root directory:
-Django - SECRET_KEY = 'django-insecure-^e)j=n8!xz@!@lmiz&8^=$i^#_!0r@(1&(pyyi9-2lts1d0&pz'
-S3 Busket - AWS_ACCESS_KEY_ID = 'AKIAZSRGGY2T2EFPLFHV'
-S3 Busket - AWS_SECRET_ACCESS_KEY = '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'
+*Create a new .env file with this data and add to the root directory:*
+*Django - SECRET_KEY = 'django-insecure-^e)j=n8!xz@!@lmiz&8^=$i^#_!0r@(1&(pyyi9-2lts1d0&pz'*
+*S3 Busket - AWS_ACCESS_KEY_ID = 'AKIAZSRGGY2T2EFPLFHV'*
+*S3 Busket - AWS_SECRET_ACCESS_KEY = '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'*
 
 
 **_Requirements' List:_**
