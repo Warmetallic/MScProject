@@ -44,6 +44,10 @@ Authorisation details for admin:
 
 The provided data is in TIFF format and every single file is around 80 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
 
+*Security*
+
+All secret keys for Heroku and Amazon S3 Bucket are stored in the separate .env file. The file is stored in the gitignore, so it is hidden from everybody. Also, it is required to add Config Vars with the secret keys on Heroku.
+
 
 **_Requirements' List:_**
 
