@@ -16,6 +16,29 @@ A new song will be added to the main page and displayed in a catalog with other 
 
 The site has a multi-search function with different filters. All filters can be applied to search separately or all together to create a more precise query. The search field is placed on the right side of the navigation bar.
 
+                                                                  Maintenance manual
+
+commands needed in local development:
+1.Git clone https://github.com/UoA-CS5942/Alpha-2021
+2.cd Alpha-2021
+3.python/pip -V (check version, if you have installed python then go to nwxt)
+4.pip install virtualenv
+5.virtualenv .  (download all stuff here)
+6.$ . ./Scripts/activate  (to turn off deactivate)
+7.Pip install Django   (install what you don't have in requirements list...)
+8.Pip install heroku
+9.Pip install django_heroku
+10.python -m pip install pillow
+
+User examples:
+● Admin can add new system maintainers by click “add” button under the “AUTHENTICATION AND AUTHORIZATION’’ bar. Then you will see the details about admin table. Fulfill the table and the new account would be created. 
+Also if they want to change the account of admin information can be achieved by clicking “change” button. You will be noticed if you add  the username and password for new account successfully. The picture as showed below.
+
+● Update songs information: If admin want to add or change some information about the images, just press “add” or “change” button. And recent action part shows the recorded operation actions, it will help you to think back what you changed recently.
+
+● Add detail admin account information: Now you can fill the information about personal name and address and choose which kind of permissions this account should have.
+
+
 **_The app development_**
 
 *Pair and mob programming*
