@@ -16,11 +16,11 @@ A new song will be added to the main page and displayed in a catalog with other 
 
 The site has a multi-search function with different filters. All filters can be applied to search separately or all together to create a more precise query. The search field is placed on the right side of the navigation bar.
 
-                                                             Maintenance manual
+                                                           Maintenance manual
 
 Commands needed in local development:
 
-1.Git clone https://github.com/UoA-CS5942/Alpha-2021
+1.Git clone https://github.com/UoA-CS5942/Alpha-2021.git
 
 2.cd Alpha-2021
 
