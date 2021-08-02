@@ -80,66 +80,100 @@ Authorisation details for admin:
 
 The provided data is in TIFF format and every single file is around 80 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
 
-*Security*
-
-All secret keys for Django and Amazon S3 Bucket are stored in the separate .env file. The file is stored in the gitignore, so it is hidden from everybody. Also, it is required to add Config Vars with the secret keys on Heroku.
-
-Create a new .env file with this data and add to the root directory:
-
-Django - SECRET_KEY = 'django-insecure-^e)j=n8!xz@!@lmiz&8^=$i^#_!0r@(1&(pyyi9-2lts1d0&pz'
-
-S3 Busket - AWS_ACCESS_KEY_ID = 'AKIAZSRGGY2T2EFPLFHV'
-
-S3 Busket - AWS_SECRET_ACCESS_KEY = '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'
-
-
 **_Requirements' List:_**
 
 appdirs==1.4.4
+
 asgiref==3.3.4
+
 astroid==2.5.6
+
 behave==1.2.6
+
 bitarray==2.1.3
+
 boto3==1.17.107
+
 botocore==1.20.107
+
 cffi==1.14.5
+
 colorama==0.4.4
+
 distlib==0.3.2
+
 dj-database-url==0.5.0
+
 Django==3.2.4
+
 django-cors-headers==3.7.0
+
 django-heroku==0.3.1
+
 django-storages==1.11.1
+
 django-utils-six==2.0
+
 djangorestframework==3.12.4
+
 filelock==3.0.12
+
 gunicorn==20.1.0
+
 img2pdf==0.4.1
+
 isort==5.9.1
+
 jmespath==0.10.0
+
 lazy-object-proxy==1.6.0
+
 lxml==4.6.3
+
 mccabe==0.6.1
+
 parse==1.19.0
+
 parse-type==0.5.2
+
 pdfreader==0.1.10
+
 pikepdf==2.12.2
+
 Pillow==8.2.0
+
 psycopg2==2.9.1
+
 pycparser==2.20
+
 pycryptodome==3.10.1
+
 pylint==2.8.3
+
 pyPdf==1.13
+
 PyPDF2==1.26.0
+
 pytesseract==0.3.7
+
 python-dateutil==2.8.1
+
 python-decouple==3.4
+
 pytz==2021.1
+
 s3transfer==0.4.2
+
 six==1.16.0
+
 sqlparse==0.4.1
+
 toml==0.10.2
+
 urllib3==1.26.6
+
 virtualenv==20.4.7
+
 whitenoise==5.2.0
+
 wrapt==1.12.1
