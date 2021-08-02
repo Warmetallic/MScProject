@@ -16,7 +16,7 @@ A new song will be added to the main page and displayed in a catalog with other 
 
 The site has a multi-search function with different filters. All filters can be applied to search separately or all together to create a more precise query. The search field is placed on the right side of the navigation bar.
 
-                                                        Maintenance manual
+                                                           Maintenance manual
 
 Commands needed in local development:
 
@@ -72,9 +72,6 @@ The project is deployed on Heroku.
 
 The website link: https://stark-mesa-89039.herokuapp.com/
 
-Authorisation details for admin:
--Username: admin
--Password: admin
 
 *Data and storage*
 
