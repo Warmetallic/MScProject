@@ -7,7 +7,7 @@
 /* navigation bar */
 .nav {
   height: 70px;
-/*  overflow: hidden;*/
+  /*  overflow: hidden;*/
   overflow-y: visible !important;
   background-color: navy;
   font-size: 20px;
@@ -16,13 +16,6 @@
   border-bottom-style: solid;
   border-width:1px;
   margin: 0px;
-}
-.xtext {
-  display:flex;
-  justify-content: space-between;
-  position: relative;
-  left: auto;
-
 }
 
 /* Style the topnav links */
@@ -47,156 +40,165 @@
 /*.nav  a:hover:not(.navbar-brand) {
   background-color: grey;
   color: white;
-}*/
+  }*/
 
 
 /*.nav a:active:not(.navbar-brand){
   background-color: gold;
   color: white;
-}*/
+  }*/
 
-.nav  a:hover:not(.navbar-brand){
+  .nav  a:hover:not(.navbar-brand){
     background-color: gold;
     color: black;
-}
-
-
-
-
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .nav, .intro {   
-    flex-direction: column;
   }
-}
 
 
-/*modified jumborton class (header)  */
-.header1{
-  display: inline-block;
-  text-align: center;
-  margin:0;
-  background-color: white;
-  background-size: 100px;
-  background-position: 65% 50%;
-  background-repeat: no-repeat;
-  color: black;
-}
-
-.header1 h1{
-  margin: 30px 50px;
-  padding-left: 100px;
-}
-
-/*modifies the footer section (jumbotron class)  */
-.footer{
-text-align: center;
-background-color: #222;
-height: 60px;
-}
-/*modifies the footer section (jumbotron class)  */
-.footer p{
-margin-top: 15px;
-font-family: 'Courier New', Courier, monospace; 
-font-size: 30px;
-color: white; 
-}
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns:auto auto auto auto auto;
-  grid-gap: 10px;
-  background-color: white;
-  justify-content: center;
-}
-
-.grid-container > div {
-  background-color: white;
-  text-align: center;
-  font-size: 20px;
-}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .nav, .intro {   
+      flex-direction: column;
+    }
+  }
 
 
-.card-home{
-  width: 200px;
-  text-align: center;
-  align-items: center;
-}
+  /*modified jumborton class (header)  */
+  .header1{
+    display: inline-block;
+    /*  text-align: center;*/
+    width: 100%;
+    margin:0;
+    padding: 15px;
+    background-color: white;
+    background-size: 100px;
+    background-position: 65% 50%;
+    background-repeat: no-repeat;
+    color: black;
+  }
 
-.btn-home{
-  width: 100px;
-  margin-bottom: 10px;
-  background-color: royalblue;
-}
+  .headerimg{
+    height: 80px;
+    width: 340px;
+    vertical-align:middle;
+    margin-right: 200px;
+  }
 
+  .xtext{
+    vertical-align:middle;
+    font-size: 50px;
+    font-family: "Times New Roman", Times, serif;
+    color: navy;
+  }
 
-#bTest {
-  border: solid gold 1px;
-}
+  .topimgtext{
+    text-align: left;
+  }
 
-#login-style {
-  margin-left: 500px;
-}
+  /*modifies the footer section (jumbotron class)  */
+  .footer{
+    text-align: center;
+    background-color: #222;
+    height: 60px;
+  }
+  /*modifies the footer section (jumbotron class)  */
+  .footer p{
+    margin-top: 15px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 30px;
+    color: white; 
+  }
 
-.logo {
-  float: left;
+  .grid-container {
+    display: grid;
+    grid-template-columns:auto auto auto auto auto;
+    grid-gap: 10px;
+    background-color: white;
+    justify-content: center;
+  }
 
-}
-
-.bodyBackground{
-  background: rgb(255,255,240, 0.6);
-}
-
-.searchButton{
-  background-color: gold;
-  color: black;
-}
-
-.searchField{
-}
-
-.dropdownButton{
-  color: black;
-  background-color: gold;
-  margin-right: 25px;
-}
-
-
-.collapseButton{
-  color: black;
-  background-color: gold;
-  margin-left: 15px;
-}
-
-.topCardImg{
-  align-items: center;
-  width: 100%;
-  height: 212px;
-}
-
-.map{
-  align-items: center;
-}
-
-.mapp{
-  margin: 20px;
-}
+  .grid-container > div {
+    background-color: white;
+    text-align: center;
+    font-size: 20px;
+  }
 
 
-/*code adapted from - https://www.benmarshall.me/max-character-length-ellipsis-css/  */
-.limitText {
-  overflow: hidden;
-  max-width: 75ch;
-  text-overflow: ellipsis;
-  white-space: nowrap; 
-}
+  .card-home{
+    width: 200px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .btn-home{
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: royalblue;
+  }
 
 
-.helpheader{
-  text-align: center;
-}
+  #bTest {
+    border: solid gold 1px;
+  }
 
-.helplist{
-  margin-left: 20px;
-}
+  #login-style {
+    margin-left: 500px;
+  }
+
+  .bodyBackground{
+    background: rgb(255,255,240, 0.6);
+  }
+
+  .searchButton{
+    background-color: gold;
+    color: black;
+  }
+
+  .searchField{
+  }
+
+  .dropdownButton{
+    color: black;
+    background-color: gold;
+    margin-right: 25px;
+  }
+
+
+  .collapseButton{
+    color: black;
+    background-color: gold;
+    margin-left: 15px;
+  }
+
+  .topCardImg{
+    align-items: center;
+    width: 100%;
+    height: 212px;
+  }
+
+  .map{
+    align-items: center;
+  }
+
+  .mapp{
+    margin: 20px;
+  }
+
+
+  /*code adapted from - https://www.benmarshall.me/max-character-length-ellipsis-css/  */
+  .limitText {
+    overflow: hidden;
+    max-width: 75ch;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+  }
+
+
+  .helpheader{
+    text-align: center;
+  }
+
+  .helplist{
+    margin-left: 20px;
+  }

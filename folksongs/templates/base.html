@@ -18,12 +18,14 @@
     <body>
 
       <!--Header-->
-      <header class="jumbotron header1 xtext">
-       <img src="{% static 'imgs/aberdeen-logo.png' %}" class="logo"> 
-       <h1 class="xtext">The Greig-Duncan Folk Song Collection</h1>
-     </header>
-     <!--Navigation panel-->
-     <nav class="navbar sticky-top navbar-expand-lg nav">
+      <header class="jumbotron header1">
+       <div class="topimgtext">
+        <img class="headerimg" src="{% static 'imgs/aberdeen-logo.png' %}">
+        <span class="xtext">The Greig-Duncan Folk Song Collection</span>
+      </div>
+    </header>
+    <!--Navigation panel-->
+    <nav class="navbar sticky-top navbar-expand-lg nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="{% url 'home' %}">The Greig-Duncan Folk Song Collection</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,9 +52,9 @@
 
             <!-- Example split danger button -->
             <div class="btn-group">
-            <button type="button" class="btn dropdown-toggle dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
-              Filters
-            </button>
+              <button type="button" class="btn dropdown-toggle dropdownButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Filters
+              </button>
               <ul class="dropdown-menu">
                 <br>
                 <input class="form-control me-2" type="search" placeholder="Search Volumes" aria-label="Search" name="volume">
