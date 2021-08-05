@@ -86,7 +86,7 @@
   }
 
   .xtext{
-    vertical-align:middle;
+    display:flex;
     font-size: 50px;
     font-family: "Times New Roman", Times, serif;
     color: navy;
