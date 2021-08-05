@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 <center>
-{% if name|length > 0 and volume|length > 0 and author|length > 0  %}
+	{% if name|length > 0 and volume|length > 0 and author|length > 0  %}
 	<h1>The song title: {{ name }} || Author: {{ author }} || Volume: {{ volume }}</h1>
 	<br>
 </center>
@@ -17,8 +17,8 @@
 </ol>
 
 {% elif name|length == 0 and volume|length > 0 %}
-	<h1>Volume number: {{ volume }} </h1>
-	<br>
+<h1>Volume number: {{ volume }} </h1>
+<br>
 </center>
 <ol>
 	<div class="list-group">
@@ -32,8 +32,8 @@
 </ol>
 
 {% elif name|length > 0 and volume|length == 0 %}
-	<h1> Title: {{ name }} </h1>
-	<br>
+<h1> Title: {{ name }} </h1>
+<br>
 </center>
 <ol>
 	<div class="list-group">
@@ -48,8 +48,8 @@
 
 
 {% elif author|length > 0 and volume|length == 0 %}
-	<h1> Author: {{ author }} </h1>
-	<br>
+<h1> Author: {{ author }} </h1>
+<br>
 </center>
 <ol>
 	<div class="list-group">
@@ -64,8 +64,8 @@
 
 
 {% elif name|length > 0 and volume|length > 0 %}
-	<h1> Title: {{ name }} </h1>
-	<br>
+<h1> Title: {{ name }} </h1>
+<br>
 </center>
 <ol>
 	<div class="list-group">

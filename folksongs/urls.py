@@ -15,9 +15,7 @@ urlpatterns = [
   path('search', views.search, name= 'search'),
   path('map', views.map, name= 'map'),
   path('help', views.help, name= 'help'),
-    # path('about/', views.about, name="about"),
-	# path('details/<int:id>/', views.details, name="details"),
-	# path('404', views.handler404, name="404"),
+	path('404', views.handler404, name="404"),
 ]
 
 if settings.DEBUG:

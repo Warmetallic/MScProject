@@ -6,6 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 from django.contrib.auth import logout
 from .models import Song, SongImage
 from .forms import SignUpForm, SongForm
+from django.shortcuts import render, get_object_or_404
 
 
 
@@ -78,3 +79,6 @@ def map(request):
 
 def help(request):
     return render(request, 'help.html', {})
+
+def handler404(request):
+    return render(request, '404.html', {})
