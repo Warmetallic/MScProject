@@ -7,7 +7,7 @@ Since the dataset is huge and requires a storage of several terabytes, only a fe
 The website is deployed on Heroku and should be accessed through this web hosting service. If needed, the project can be launched locally. To do so, prepare own virtual environment and install everything from the requirements.txt file. The app was developed and tested on Windows machines in Sublime Text and Codio.
 
 
-**_The core features_**
+# The core features
 
 The tools to add new songs with static files (images) and to edit already existed one. Any song can have a detailed description and multiple images, whose images display music notations.
 
@@ -18,17 +18,17 @@ A new song will be added to the main page and displayed in a catalog with other 
 The site has a multi-search function with different filters. All filters can be applied to search separately or all together to create a more precise query. The search field is placed on the right side of the navigation bar.
 
 
-**_User creation_**
+# User creation
 
 First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
 
 
-**_Song creation_**
+# Song creation
 
 New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
 
 
-**_The app development_**
+# The app development
 
 *Pair and mob programming*
 
@@ -62,7 +62,7 @@ The provided data is in TIFF format and every single file is around 80 Mbs, whic
 All security keys for Django and Amazon S3 Bucket are placed in the env file. This file is added to gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
 
 
-*Additional programs*
+# Additional programs
 
 To prepare data from songs' files we are using Tesseract. This library converts images to text and stores all data into the separate file. After that, it is easy to store text data into the Django admin form. 
 
@@ -83,7 +83,7 @@ Tesseract instructions:
 7 Run the program (py songtext.py)
 
 
-**_Commands for the local development:_** 
+# Commands for the local development: 
 
 1 git clone https://github.com/UoA-CS5942/Alpha-2021.git
 
@@ -108,7 +108,7 @@ Tesseract instructions:
 11 py manage.py runserver (runs the project)
 
 
-**_Commands for Heroku_**
+# Commands for Heroku
 
 1 heroku login (login to your account)
 
@@ -119,7 +119,7 @@ Tesseract instructions:
 4 heroku run --app stark-mesa-89039 python manage.py migrate (apply all migrations)
 
 
-**_Requirements' List:_**
+# Requirements' List:
 
 appdirs==1.4.4
 
