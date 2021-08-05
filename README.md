@@ -20,12 +20,12 @@ The site has a multi-search function with different filters. All filters can be 
 
 **_User creation_**
 
-● First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
+First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
 
 
 **_Song creation_**
 
-● New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
+New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
 
 
 **_The app development_**
