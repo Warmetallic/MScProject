@@ -1,3 +1,17 @@
+# Alpha-2021
+
+## Team members:
+
+**_Qi Liu_**
+
+**_Haixun Xin_**
+
+**_Gleb Kharlamov_**
+
+**_Yanghaochen Xu_**
+
+**_Christopher McKeagney_**
+
 # The Greig-Duncan Folk Song Collection
 
 The main purpose of this web application is to store and display The Greig-Duncan Folk Song Collection. All data was provided by Dr. McKean in 8 volumes with hundreds of musical notations. The link to the data: https://www.dropbox.com/sh/k4qcsdi19vu8thl/AACJB0q9AKmo6k-rYiYGDevwa?dl=0 
@@ -17,15 +31,6 @@ A new song will be added to the main page and displayed in a catalog with other 
 
 The site has a multi-search function with different filters. All filters can be applied to search separately or all together to create a more precise query. The search field is placed on the right side of the navigation bar.
 
-
-# User creation
-
-First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
-
-
-# Song creation
-
-New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
 
 
 # The app development
@@ -61,6 +66,20 @@ The provided data is in TIFF format and every single file is around 80 Mbs, whic
 
 All security keys for Django and Amazon S3 Bucket are placed in the env file. This file is added to gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
 
+# User creation
+
+First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
+
+![Снимок экрана (872)](https://user-images.githubusercontent.com/35700332/128427702-a70193b4-4b70-493a-bb1a-c45daebadcaa.png)
+
+
+# Song creation
+
+New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
+After that, the song will be displayed on the website.
+
+![Снимок экрана (875)](https://user-images.githubusercontent.com/35700332/128428425-1f9a37f2-5c28-4b64-8c37-f7f0183ad7ea.png)
+
 
 # Additional programs
 
@@ -68,58 +87,59 @@ To prepare data from songs' files we are using Tesseract. This library converts 
 
 Tesseract instructions:
 
-1 Prepare tiff files from Dropbox
+- Prepare tiff files from Dropbox
 
-2 Make a screenshot of every tiff file (this way an image will be in a png format, which is much lighter than tiff)
+- Make a screenshot of every tiff file (this way an image will be in a png format, which is much lighter than tiff)
 
-3 Crop new images
+- Crop new images
 
-4 Store images into a separate folder
+- Store images into a separate folder
 
-5 Open the program (Alpha-2021\folksongs\management\commands\songtxt.py)
+- Open the program (Alpha-2021\folksongs\management\commands\songtxt.py)
 
-6 Set a path to the folder with images
+- Set a path to the folder with images
 
-7 Run the program (py songtext.py)
+- Run the program (py songtext.py)
 
 
 # Commands for the local development: 
 
-1 git clone https://github.com/UoA-CS5942/Alpha-2021.git
+- git clone https://github.com/UoA-CS5942/Alpha-2021.git
 
-2 cd Alpha-2021
+- cd Alpha-2021
 
-3 python/pip -V (checks a version)
+- python/pip -V (checks a version)
 
-4 pip install virtualenv (install the virtual environment)
+- pip install virtualenv (install the virtual environment)
 
-5 virtualenv . (download everything here)
+- virtualenv . (download everything here)
 
-6 . ./Scripts/activate (to turn off - deactivate)
+- . ./Scripts/activate (to turn off - deactivate)
 
-7 pip install django (install everything from the requirements list provided below)
+- pip install django (install everything from the requirements list provided below)
 
-8 py manage.py createsuperuser (create the admin user)
+- py manage.py createsuperuser (create the admin user)
 
-9 py manage.py makemigrations (packaging models into a database)
+- py manage.py makemigrations (packaging models into a database)
 
-10 py manage.py migrate (apply all migrations)
+- py manage.py migrate (apply all migrations)
 
-11 py manage.py runserver (runs the project)
+- py manage.py runserver (runs the project)
 
 
 # Commands for Heroku
 
-1 heroku login (login to your account)
+- heroku login (login to your account)
 
-2 heroku run --app stark-mesa-89039 python manage.py createsuperuser (create the admin user)
+- heroku run --app stark-mesa-89039 python manage.py createsuperuser (create the admin user)
 
-3 heroku run --app stark-mesa-89039 python manage.py makemigrations (packaging models into a database)
+- heroku run --app stark-mesa-89039 python manage.py makemigrations (packaging models into a database)
 
-4 heroku run --app stark-mesa-89039 python manage.py migrate (apply all migrations)
+- heroku run --app stark-mesa-89039 python manage.py migrate (apply all migrations)
 
 
 # Requirements' List:
+````
 
 appdirs==1.4.4
 
@@ -216,3 +236,4 @@ virtualenv==20.4.7
 whitenoise==5.2.0
 
 wrapt==1.12.1
+````
