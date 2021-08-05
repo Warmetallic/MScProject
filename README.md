@@ -16,40 +16,14 @@ A new song will be added to the main page and displayed in a catalog with other 
 
 The site has a multi-search function with different filters. All filters can be applied to search separately or all together to create a more precise query. The search field is placed on the right side of the navigation bar.
 
-                                                           Maintenance manual
 
-Commands needed in local development:
+**_User creation_**
 
-1.git clone https://github.com/UoA-CS5942/Alpha-2021.git
+● First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
 
-2.cd Alpha-2021
+**_Song creation_**
 
-3.python/pip -V (check version, if you have installed python then go to nwxt)
-
-4.pip install virtualenv  (install virtual environment)
-
-5.virtualenv .  (download all stuff here)
-
-6.$ . ./Scripts/activate  (to turn off deactivate)
-
-7.Pip install Django   (install what you don't have in requirements list...)
-
-8.Pip install heroku
-
-9.Pip install django_heroku
-
-10.python -m pip install pillow
-
-11.manage.py runserver
-
-User examples:
-
-● Admin can add new system maintainers by click “add” button under the “AUTHENTICATION AND AUTHORIZATION’’ bar. Then you will see the details about admin table. Fulfill the table and the new account would be created. 
-Also if they want to change the account of admin information can be achieved by clicking “change” button. You will be noticed if you add  the username and password for new account successfully. The picture as showed below.
-
-● Update songs information: If admin want to add or change some information about the images, just press “add” or “change” button. And recent action part shows the recorded operation actions, it will help you to think back what you changed recently.
-
-● Add detail admin account information: Now you can fill the information about personal name and address and choose which kind of permissions this account should have.
+● New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
 
 
 **_The app development_**
@@ -72,10 +46,49 @@ The project is deployed on Heroku.
 
 The website link: https://stark-mesa-89039.herokuapp.com/
 
-
 *Data and storage*
 
 The provided data is in TIFF format and every single file is around 80 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
+
+*Security*
+All security keys for Django and Amazon S3 Bucket are placed in the env file. This file is added to gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
+
+
+**_Commands for the local development:_** 
+
+1 git clone https://github.com/UoA-CS5942/Alpha-2021.git
+
+2 cd Alpha-2021
+
+3 python/pip -V (checks a version)
+
+4 pip install virtualenv (install the virtual environment)
+
+5 virtualenv . (download everything here)
+
+6 . ./Scripts/activate (to turn off - deactivate)
+
+7 pip install django (install everything from the requirements list provided below)
+
+8 py manage.py createsuperuser (create the admin user)
+
+9 py manage.py makemigrations (packaging models into a database)
+
+10 py manage.py migrate (apply all migrations)
+
+11 py manage.py runserver (runs the project)
+
+
+**_Commands for Heroku_**
+
+1 heroku login (login to your account)
+
+2 heroku run --app stark-mesa-89039 python manage.py createsuperuser (create the admin user)
+
+3 heroku run --app stark-mesa-89039 python manage.py makemigrations (packaging models into a database)
+
+4 heroku run --app stark-mesa-89039 python manage.py migrate (apply all migrations)
+
 
 **_Requirements' List:_**
 
