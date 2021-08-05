@@ -6,6 +6,7 @@ Since the dataset is huge and requires a storage of several terabytes, only a fe
 
 The website is deployed on Heroku and should be accessed through this web hosting service. If needed, the project can be launched locally. To do so, prepare own virtual environment and install everything from the requirements.txt file. The app was developed and tested on Windows machines in Sublime Text and Codio.
 
+
 **_The core features_**
 
 The tools to add new songs with static files (images) and to edit already existed one. Any song can have a detailed description and multiple images, whose images display music notations.
@@ -21,6 +22,7 @@ The site has a multi-search function with different filters. All filters can be 
 
 ● First of all, it is required to create an admin user to access the Django dashboard. In order to do so, type |py manage.py createsuperuser|. Enter details (username, password and email). After that, it is possible to login into the dashboard and use the admin tools (create/edit/delete songs,images and users). In the dashboard Admin can create new users by click “ADD” button under the “AUTHENTICATION AND AUTHORIZATION’’. This will work only in the local environment. If needed to create Admin for Heroku, use this command instead |heroku run --app stark-mesa-89039 python manage.py makemigrations|.
 
+
 **_Song creation_**
 
 ● New songs can be added or edited only by the admin user through the dashboard. In the dashboard click on Songs and choose ADD. Fill all fields and press SAVE.
@@ -32,13 +34,16 @@ The site has a multi-search function with different filters. All filters can be 
 
 The project was developed by a group of five students. Teams of two and three students were working on different activities based on Sprint tasks. On a weekly basis we had mob programming sessions to solve any appearing problems and explain new solutions/decisions to each other.
 
+
 *Testing*
 
 Unit testing was used to test all functions and the functionality
 
+
 *Git*  
 
 The version control system was used to create this project. It allowed our team to collaborate and use back-ups if required. Every team member was working on own branch and after a review meeting we merged all work. The git log is providing all history of the development.
+
 
 *Heroku* 
 
@@ -46,13 +51,16 @@ The project is deployed on Heroku.
 
 The website link: https://stark-mesa-89039.herokuapp.com/
 
+
 *Data and storage*
 
 The provided data is in TIFF format and every single file is around 80 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
 
+
 *Security*
 
 All security keys for Django and Amazon S3 Bucket are placed in the env file. This file is added to gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
+
 
 *Additional programs*
 
