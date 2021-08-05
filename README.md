@@ -51,7 +51,28 @@ The website link: https://stark-mesa-89039.herokuapp.com/
 The provided data is in TIFF format and every single file is around 80 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
 
 *Security*
+
 All security keys for Django and Amazon S3 Bucket are placed in the env file. This file is added to gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
+
+*Additional programs*
+
+To prepare data from songs' files we are using Tesseract. This library converts images to text and stores all data into the separate file. After that, it is easy to store text data into the Django admin form. 
+
+Tesseract instructions:
+
+1 Prepare tiff files from the dropbox
+
+2 Make a screenshot of every tiff file (this way an image will be in a png format, which is much lighter than tiff)
+
+3 Crop new images
+
+4 Store images into a separate folder
+
+5 Open the program (Alpha-2021\folksongs\management\commands\songtxt.py)
+
+6 Set a path to the folder with images
+
+7 Run the program (py songtext.py)
 
 
 **_Commands for the local development:_** 
