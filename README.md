@@ -60,7 +60,7 @@ To prepare data from songs' files we are using Tesseract. This library converts 
 
 Tesseract instructions:
 
-1 Prepare tiff files from the dropbox
+1 Prepare tiff files from Dropbox
 
 2 Make a screenshot of every tiff file (this way an image will be in a png format, which is much lighter than tiff)
 
