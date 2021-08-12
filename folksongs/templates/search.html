@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
+
+<!-- Refered to Django documentation https://docs.djangoproject.com/en/3.2/ref/templates/language/ - when writing this code -->
 <center>
 	{% if name|length > 0 and volume|length > 0 and author|length > 0  %}
 	<h1>The song title: {{ name }} || Author: {{ author }} || Volume: {{ volume }}</h1>

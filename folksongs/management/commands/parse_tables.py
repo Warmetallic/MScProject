@@ -1,6 +1,9 @@
 """
 This file will populate the tables using Faker
 """
+
+# Code for this page was adapted and inspired by the lectures from Dr Scharlau at the University of Aberdeen - in the 'Enterprise Software Development' module.
+
 import random
 import decimal
 from datetime import datetime

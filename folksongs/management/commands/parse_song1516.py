@@ -7,6 +7,8 @@ from django.core.management.base import BaseCommand, CommandError
 
 from folksongs.models import Song
 
+#This was a test to insert one song to the database. 
+
 
 class Command(BaseCommand):
     help = 'Load data into the tables'

@@ -23,3 +23,5 @@ class SongForm (forms.ModelForm):
     class Meta:
         model = Song
         fields = ('songID','songName','songAuthor','description','image')
+
+# Code was adapted and inspired by the lectures from Dr Scharlau at the University of Aberdeen - in the 'Enterprise Software Development' module.

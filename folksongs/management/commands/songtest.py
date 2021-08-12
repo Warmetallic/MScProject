@@ -1,6 +1,5 @@
-"""
-This file will populate the tables using Faker
-"""
+#This is a test to insert a song into the database
+
 import random
 import decimal
 from datetime import datetime

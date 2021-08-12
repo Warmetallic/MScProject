@@ -5,6 +5,8 @@ from django.conf.urls.static import static
 import django.contrib.auth.urls
 from django.http import Http404
 
+# Code was adapted and inspired by the lectures from Dr Scharlau at the University of Aberdeen - in the 'Enterprise Software Development' module.
+
 
 urlpatterns = [
 	path('', views.home, name="home"),

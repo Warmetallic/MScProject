@@ -8,6 +8,7 @@ from .models import Song, SongImage
 from .forms import SignUpForm, SongForm
 from django.shortcuts import render, get_object_or_404
 
+# Code for this page was adapted and inspired by the lectures from Dr Scharlau at the University of Aberdeen - in the 'Enterprise Software Development' module.
 
 
 # Create your views here.
@@ -39,7 +40,8 @@ def song_add(request):
     else:
         form = SongForm()
     return render(request, 'song_add.html', {'form': form})
-    
+
+# Code for signup was adapted and inspired by https://docs.djangoproject.com/en/3.2/ref/templates/language/.
 
 def signup(request):
     form = SignUpForm(request.POST)
@@ -57,6 +59,8 @@ def signup(request):
         return redirect('/')
     return render(request, 'signup.html', {'form': form})
 
+
+# Code for search was adapted and inspired by https://www.youtube.com/watch?v=AGtae4L5BbI&ab_channel=Codemy.com.
 
 def search(request):
     if request.method == "POST":

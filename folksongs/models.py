@@ -6,7 +6,7 @@ from django.dispatch import receiver
 
 # Create your models here.
 
-
+# Code was adapted and inspired by the lectures from Dr Scharlau at the University of Aberdeen - in the 'Enterprise Software Development' module.
 # switch customer to user so that we can use Django's componenents
 # https://blog.crunchydata.com/blog/extending-djangos-user-model-with-onetoonefield 
 # https://simpleisbetterthancomplex.com/tutorial/2016/07/22/how-to-extend-django-user-model.html#onetoone
