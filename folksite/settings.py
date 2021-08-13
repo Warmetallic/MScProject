@@ -149,7 +149,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 
-#S3 BUCKETS CONFIG
+#S3 BUCKETS CONFIG 
+#Code adapted from this tutorial https://www.youtube.com/watch?v=inQyZ7zFMHM&t=1s
 
 AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
 AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
