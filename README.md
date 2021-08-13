@@ -23,9 +23,9 @@ The website is deployed on Heroku and should be accessed through this web hostin
 
 # The core features
 
-The tools to add new songs with static files (images) and to edit already existed one. Any song can have a detailed description and multiple images, whose images display music notations.
+The tools to add new songs with static files (images) and to edit already existings ones. Any song can have a detailed description and multiple images, whose images display music notations.
 
-In order to use these tools, a user need to login as an admin and with the Django admin form add a new song. The Django dashboard can be accessed through the navigation bar by clicking on the Admin link or through the direct link https://stark-mesa-89039.herokuapp.com/admin/login/?next=/admin/
+In order to use these tools, a user needs to login as an admin and with the Django admin form add a new song. The Django dashboard can be accessed through the navigation bar by clicking on the Admin link or through the direct link https://stark-mesa-89039.herokuapp.com/admin/login/?next=/admin/
 
 A new song will be added to the main page and displayed in a catalog with other songs. It is possible to click on the song and see all information about it. Images are placed in a carousel from Bootstrap and can be switched by sliders.
 
@@ -35,9 +35,9 @@ The site has a multi-search function with different filters. All filters can be 
 
 # The app development
 
-*Pair and mob programming*
+*Paired and mob programming*
 
-The project was developed by a group of five students. Teams of two and three students were working on different activities based on Sprint tasks. On a weekly basis we had mob programming sessions to solve any appearing problems and explain new solutions/decisions to each other.
+The project was developed by a group of five students. Teams of two and three students were working on different activities based on Sprint tasks. On a weekly basis we had mob programming sessions to solve any problems and explain new solutions/decisions to each other.
 
 
 *Testing*
@@ -47,7 +47,7 @@ Unit testing was used to test all functions and the functionality
 
 *Git*  
 
-The version control system was used to create this project. It allowed our team to collaborate and use back-ups if required. Every team member was working on own branch and after a review meeting we merged all work. The git log is providing all history of the development.
+The version control system was used to create this project. It allowed our team to collaborate and use back-ups if required. Every team member was working on their branch and after a review meeting we merged all the work. The gitlog.txt is providing all history of the development.
 
 
 *Heroku* 
@@ -59,12 +59,12 @@ The website link: https://stark-mesa-89039.herokuapp.com/
 
 *Data and storage*
 
-The provided data is in TIFF format and every single file is around 80 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
+The provided data is in TIFF format and every single file is around 70 Mbs, which is too heavy to store and to upload/display on the website. We reformatted files to the PNG format and dramatically decreased the size of images. This way it is more efficient to work with the files. To store all our static files, we used an Amazon S3 bucket, since Heroku cannot keep large files.
 
 
 *Security*
 
-All security keys for Django and Amazon S3 Bucket are placed in the env file. This file is added to gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
+All security keys for Django and Amazon S3 Bucket are placed in the .env file. This file is added to .gitignore, so no one can obtain the data. For a new team of developers it is a need to create own env file with new keys by using Decouple(python library).
 
 # User creation
 
