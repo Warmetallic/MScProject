@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stark-mesa-89039.herokuapp.com', 'localhost', 'camilla-patient-3000.codio-box.uk']
+ALLOWED_HOSTS = ['gleb-kharlamov-msc-project.herokuapp.com', 'localhost', 'camilla-patient-3000.codio-box.uk']
 
 
 # Application definition
