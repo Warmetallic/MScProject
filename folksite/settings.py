@@ -13,7 +13,7 @@ import os
 import django_heroku
 from pathlib import Path
 import dj_database_url
-from decouple import config
+# from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config('SECRET_KEY')
+SECRET_KEY = "django-insecure-^e)j=n8!xz@!@lmiz&8^=$i^#_!0r@(1&(pyyi9-2lts1d0&pz"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -152,8 +152,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 #S3 BUCKETS CONFIG 
 #Code adapted from this tutorial https://www.youtube.com/watch?v=inQyZ7zFMHM&t=1s
 
-AWS_ACCESS_KEY_ID = config('AWS_ACCESS_KEY_ID')
-AWS_SECRET_ACCESS_KEY = config('AWS_SECRET_ACCESS_KEY')
+AWS_ACCESS_KEY_ID = "AKIAZSRGGY2TTQ5QCO45"
+AWS_SECRET_ACCESS_KEY = "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"
 AWS_STORAGE_BUCKET_NAME = 'msc-project'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
